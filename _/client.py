@@ -1,4 +1,4 @@
-from xcelery.tasks import imports_task
+from celery_dev.tasks import imports_task
 
 """
 提交任务(编程式提交代码)
