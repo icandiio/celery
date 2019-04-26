@@ -1,5 +1,4 @@
 from xcelery.tasks import imports_task
-from xcelery.tasks import xtask
 
 """
 提交任务(编程式提交代码)
