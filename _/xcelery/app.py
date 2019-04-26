@@ -33,3 +33,8 @@ app.config_from_object(Cofig)
 app.config_from_object(celery_config)
 
 # app.conf.update({})
+
+# @app.on_after_configure.connect # app 启动会自动回调有此装饰器的方法
+# def setup_periodic_tasks(sender, **kwargs):
+#     sender => app => celery 实例
+#     sender.add_periodic_task(10, m1task.s(''), name="10 sec") # 可在项目中手动调用
